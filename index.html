@@ -808,12 +808,13 @@ data:id=>__calcs[id]?{status:'ok',data:__calcs[id].fn(...__calcs[id].inputs.map(
 
   <section class="ev-explore ev-tabp" id="explore">
     <h2>Every finding at a glance</h2>
+    <div class="ev-wnote" style="margin:.2rem 0 .9rem;padding:.65rem .85rem;border-left:3px solid var(--ev-org);background:#f4f6fa;border-radius:6px;font-size:.86rem;line-height:1.45"><b>Organizations and staff count equally.</b> Each figure is a share of that group's own responses (out of 100 organizations, or out of 100 staff), so the larger number of staff responses does not outweigh organizations in any comparison.</div>
     <div class="ev-key"><span><i style="background:var(--ev-data)"></i>Employees</span><span><i style="background:var(--ev-org)"></i>Organizations</span><span><i style="background:var(--ev-alarm)"></i>Gap of 25+ points</span><span><i style="background:repeating-linear-gradient(135deg,var(--ev-alarm) 0 2px,transparent 2px 4px)"></i>Not asked of staff</span><span>Select a tile for detail</span></div>
     <div class="ev-ctrl" id="ev-ctrl" role="toolbar" aria-label="Filter findings"></div>
     <div id="ev-qs" class="dash-skeleton" data-source="tiles" style="min-height:4rem"></div>
   </section>
 
-  <div class="ev-foot"><div><b>How to read the comparisons.</b> The employee and organization surveys went to separate groups, so an employee's answer isn't matched to their own employer. Side-by-side numbers show sector-wide patterns, not gaps inside any one organization.</div></div>
+  <div class="ev-foot"><div><b>How to read the comparisons.</b> The employee and organization surveys went to separate groups, so an employee's answer isn't matched to their own employer. Side-by-side numbers show sector-wide patterns, not gaps inside any one organization. Combined estimates give organizations and staff equal weight.</div></div>
 </div>
 
 <script>
