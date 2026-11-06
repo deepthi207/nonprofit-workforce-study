@@ -1937,7 +1937,7 @@ dash.calc('top15_stats', {
         s.append(T(x0 + cw / 2, y + ch / 2 - 7, money(c.p50, 'ann') + (c.small ? ' ★' : ''), 'pv-medtxt', 'middle'));
         const vw = white && r !== 'White' ? Math.round((c.p50 / white.p50 - 1) * 100) : null;
         s.append(T(x0 + cw / 2, y + ch / 2 + 9, vw == null ? (r === 'White' ? 'reference' : c.n + ' people') : (vw > 0 ? '+' : '') + vw + '% vs. White', 'pv-n', 'middle', vw != null && vw <= -10 ? {fill: 'var(--ev-alarm)', 'font-weight': 700} : {}));
-        tip(box, rect, `${r} · ${l}`, [`Median ${money(c.p50, 'ann')} (${c.n} people)` + (c.small ? ' · ★ small group, read with care' : ''), `${c.below_lw}% below a living wage`, lm ? `Level median ${money(lm, 'ann')}` : '']);
+        tip(box, rect, `${r} · ${l}`, [`Median ${money(c.p50, 'ann')}` + (c.small ? ' · ★ small group, read with care' : ''), `${c.below_lw}% below a living wage`, lm ? `Level median ${money(lm, 'ann')}` : '']);
       });
     });
     box.append(s);
